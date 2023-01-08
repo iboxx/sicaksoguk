@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menü</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+html{
+  scroll-behavior:smooth; /*sayfa içi linkte yumuşak geçiş sağlar...*/
+  
+}
+
+
+body{
+  background-color:black;
+
+}
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+  color: White;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: white;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+  color: white;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+  color:white;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+  
+}
+
+/* ------------button-------------*/
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ------------button-------------*/
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<!-- buton tasarımı -->
+<center><a href="#bitki"><button class="button">Bitki Çayları</button></a></center>
+
+
+
+<!-- Kahvaltılar-->
+
+<div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+		Kahvaltılar
+      </h2>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Serpme Kahvaltı</span>
+              <span class="menu-item-price">₺230.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kahvaltı Tabağı</span>
+              <span class="menu-item-price">₺70.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Enfes Omlet</span>
+              <span class="menu-item-price">₺40.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!-- Kahvaltılar-->
+
+<!-- Menemenler -->
+     
+      <h2 class="menu-group-heading">
+		Menemenler
+      </h2>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sade</span>
+              <span class="menu-item-price">₺40.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Karışık</span>
+              <span class="menu-item-price">₺50.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kaşarlı</span>
+              <span class="menu-item-price">₺50.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sucuklu</span>
+              <span class="menu-item-price">₺50.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Patates</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sigara Böreği</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sucuklu Yumurta</span>
+              <span class="menu-item-price">₺50.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kavurmalı Yumurta</span>
+              <span class="menu-item-price">₺60.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kuymak</span>
+              <span class="menu-item-price">₺55.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/yemek/" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sahanda Yumurta</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menemenler end-->
+
+<!-- Tostlar start -->
+
+<h2 class="menu-group-heading">
+    Tostlar
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kaşarlı Bazlama</span>
+          <span class="menu-item-price">₺45.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Sucuklu Bazlama</span>
+          <span class="menu-item-price">₺45.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Karışık Bazlama</span>
+          <span class="menu-item-price">₺50.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tavuklu Bazlama</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Atom Bazlama</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kavurmalı Bazlama</span>
+          <span class="menu-item-price">₺65.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kaşarlı Üçgen Tost</span>
+          <span class="menu-item-price">₺45.000</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Sucuklu Üçgen Tost</span>
+          <span class="menu-item-price">₺45.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Karışık Üçgen Tost</span>
+          <span class="menu-item-price">₺50.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Tostlar end -->
+
+
+<!-- Çorbalar start-->
+<h2 class="menu-group-heading">
+    Çorbalar
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Mercimek</span>
+          <span class="menu-item-price">₺25.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kelle Paça</span>
+          <span class="menu-item-price">₺45.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Çorbalar end-->
+
+
+<!-- Salata Çeşitleri start-->
+
+<h2 class="menu-group-heading">
+    Salata Çeşitleri
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Beyaz Peynirli Salata</span>
+          <span class="menu-item-price">₺45.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Çoban Salata</span>
+          <span class="menu-item-price">₺40.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Mevsim Salata</span>
+          <span class="menu-item-price">₺40.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tonbalıklı Salata</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tavuklu Salata</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- Salata Çeşitleri end-->
+
+<!-- Ekmek Arası Lezzetler start -->
+<h2 class="menu-group-heading">
+    Ekmek Arası Lezzetler
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Köfte Ekmek</span>
+          <span class="menu-item-price">₺50.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Sucuk Ekmek</span>
+          <span class="menu-item-price">₺55.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kumru</span>
+          <span class="menu-item-price">₺55.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Kokoreç</span>
+          <span class="menu-item-price">₺55.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Ekmek Arası Lezzetler end-->
+
+<!-- Hamburger start -->
+<h2 class="menu-group-heading">
+    Hamburger
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Hamburger</span>
+          <span class="menu-item-price">₺70.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Hamburger Menü</span>
+          <span class="menu-item-price">₺80.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Lezzet Sepeti</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- Hamburger end-->
+
+<!-- Makarnalar start-->
+
+<h2 class="menu-group-heading">
+    Makarnalar
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Domates Soslu Linguini</span>
+          <span class="menu-item-price">₺50.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tavuklu Kremalı Linguini</span>
+          <span class="menu-item-price">₺60.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Mantı</span>
+          <span class="menu-item-price">₺65.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Makarnalar end-->
+
+<!-- Ana Yemekler start-->
+
+<h2 class="menu-group-heading">
+    Ana Yemekler
+  </h2>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tavuk Külbastı</span>
+          <span class="menu-item-price">₺90.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Beğendili Tavuk But</span>
+          <span class="menu-item-price">₺95.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Izgara Köfte</span>
+          <span class="menu-item-price">₺85.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Bursa Usülü Pideli Köfte</span>
+          <span class="menu-item-price">₺95.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Köri Soslu Tavuk</span>
+          <span class="menu-item-price">₺80.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Barbekü Soslu Tavuk</span>
+          <span class="menu-item-price">₺80.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Izgara Tavuk</span>
+          <span class="menu-item-price">₺80.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Tavuk Sote</span>
+          <span class="menu-item-price">₺85.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Et Sote</span>
+          <span class="menu-item-price">₺130.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-group">
+    <div class="menu-item">
+      <img class="menu-item-image" src="images/yemek/" alt="">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Saç Kavurma</span>
+          <span class="menu-item-price">₺130.00</span>
+        </h3>
+        <p class="menu-item-description">
+          Description
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Ana yemekler end-->
+
+
+
+  </div>
+ </div>
+</body>
