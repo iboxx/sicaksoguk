@@ -13,8 +13,15 @@
   margin: 0 auto;
   padding: 1.5em;
 }
+
+html{
+  scroll-behavior:smooth; /*sayfa içi linkte yumuşak geçiş sağlar...*/
+}
+
+
 body{
   background-color:black;
+
 }
 .menu {
   font-family: "Inter", sans-serif;
@@ -114,7 +121,7 @@ body{
 
 
 <!-- buton tasarımı -->
-<center><a href="#soup"><button class="button">Çorbalar</button></a></center>
+<center><a href="#bitki"><button class="button">Bitki Çayları</button></a></center>
 
 
 
@@ -126,9 +133,56 @@ body{
       <h2 class="menu-group-heading">
 		Espresso Bazlı Kahveler
       </h2>
+
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/latte.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/espresso-kahveler/single-espresso.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Single Espresso</span>
+              <span class="menu-item-price">₺25.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/double-espresso.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Double Espresso</span>
+              <span class="menu-item-price">₺30.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/americano.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Americano</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/latte.jpg" alt="Bruschetta">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Coffee Latte</span>
@@ -141,17 +195,81 @@ body{
         </div>
       </div>
 
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/Chai-Tea-Latte.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chai Tea Latte</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/mocha.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/espresso-kahveler/cappuccino.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Cappuccino</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/latte-macchiato.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Latte Macchiato</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/mocha.jpg" alt="Bruschetta">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Coffee Mocha</span>
-              <span class="menu-item-price">₺12.90</span>
+              <span class="menu-item-price">₺35.00</span>
             </h3>
             <p class="menu-item-description">
               Caffè mocha, diğer adıyla mocaccino, caffè latte'nin çikolata aromalı çeşididir. Mocha'nın birçok çeşidi vardır. Mocha'da çikolata şurubu, tatlı kakao tozu, dövülmüş kakao kullanılabilir. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+      
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/caramel-mocha.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Caramel Mocha</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
             </p>
           </div>
         </div>
@@ -159,34 +277,49 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/single-espresso.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/espresso-kahveler/White-Chocolate-Mocha.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
-              <span class="menu-item-name">Single Espresso</span>
-              <span class="menu-item-price">₺12.90</span>
+              <span class="menu-item-name">White Chocolate Mocha</span>
+              <span class="menu-item-price">₺35.00</span>
             </h3>
             <p class="menu-item-description">
-              Caffè mocha, diğer adıyla mocaccino, caffè latte'nin çikolata aromalı çeşididir. Mocha'nın birçok çeşidi vardır. Mocha'da çikolata şurubu, tatlı kakao tozu, dövülmüş kakao kullanılabilir. 
+              Description
             </p>
           </div>
         </div>
       </div>
-
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/double-espresso.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/espresso-kahveler/filtre-kahve.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
-              <span class="menu-item-name">Double Espresso</span>
-              <span class="menu-item-price">₺12.90</span>
+              <span class="menu-item-name">Filter Coffee</span>
+              <span class="menu-item-price">₺35.00</span>
             </h3>
             <p class="menu-item-description">
-              Caffè mocha, diğer adıyla mocaccino, caffè latte'nin çikolata aromalı çeşididir. Mocha'nın birçok çeşidi vardır. Mocha'da çikolata şurubu, tatlı kakao tozu, dövülmüş kakao kullanılabilir. 
+              Description
             </p>
           </div>
         </div>
       </div>
+
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="images/espresso-kahveler/filtre-kahve-sutlu.jpg" alt="">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Sütlü Filtre Kahve</span>
+              <span class="menu-item-price">₺35.00</span>
+            </h3>
+            <p class="menu-item-description">
+              Description
+            </p>
+          </div>
+        </div>
+      </div>
+
 
 
       <!-- Espresso Bazlı Kahveler -->
@@ -650,7 +783,7 @@ body{
 
 <!-- Bitki Çayları -->
 
-<h2 class="menu-group-heading">
+<h2 class="menu-group-heading" id="bitki">
   Bitki Çayları
     </h2>
     <div class="menu-group">
@@ -818,7 +951,7 @@ body{
     </h2>
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-americano.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-americano.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Americano</span>
@@ -834,7 +967,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-latte.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-latte.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Latte</span>
@@ -849,7 +982,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-mocha.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-mocha.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Mocha</span>
@@ -864,7 +997,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-white-mocha.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-white-mocha.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice White Mocha</span>
@@ -879,7 +1012,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-caramel-latte.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-caramel-latte.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Caramel Latte</span>
@@ -894,7 +1027,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/ice-caramel-macchiato.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/ice-caramel-macchiato.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Caramel Macchiato</span>
@@ -909,7 +1042,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/milkshake.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/soguk-kahveler/milkshake.jpg" alt="Bruschetta">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Milkshake</span>
@@ -930,42 +1063,7 @@ body{
 
 
 
-      <!-- ÇORBALAR-->
-
-      <h2 class="menu-group-heading" id="soup"> <!-- id'yi sayfa içi link için oluşturduk. -->
-        Çorbalar
-          </h2>
-      <div class="menu-group">
-        <div class="menu-item">
-          <img class="menu-item-image" src="images/mercimek-soup.jpg" alt="Bruschetta">
-          <div class="menu-item-text">
-            <h3 class="menu-item-heading">
-              <span class="menu-item-name">Mercimek Çorbası</span>
-              <span class="menu-item-price">₺25.00</span>
-            </h3>
-            <p class="menu-item-description">
-              Muazzam bir kahve deneyimi.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-group">
-        <div class="menu-item">
-          <img class="menu-item-image" src="images/kelle-paca-soup.png" alt="Bruschetta">
-          <div class="menu-item-text">
-            <h3 class="menu-item-heading">
-              <span class="menu-item-name">Kelle Paça Çorbası</span>
-              <span class="menu-item-price">₺40.00</span>
-            </h3>
-            <p class="menu-item-description">
-              Kelle paça Çorbası
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ÇORBALAR-->
+      
 
 
     </div>
