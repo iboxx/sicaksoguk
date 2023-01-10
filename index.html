@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   margin: 0 auto;
   padding: 1.5em;
 }
+
 
 html{
   scroll-behavior:smooth; /*sayfa içi linkte yumuşak geçiş sağlar...*/
@@ -32,7 +34,7 @@ body{
 .menu-group-heading {
   margin: 0;
   padding-bottom: 1em;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ccc; /*alt çizgi sanırım*/
   color: White;
 }
 
@@ -53,6 +55,7 @@ body{
   flex-shrink: 0;
   object-fit: cover;
   margin-right: 1.5em;
+  border-radius: 5%; /*resmin köşelerini yumuşatır.*/
 }
 
 .menu-item-text {
@@ -93,7 +96,6 @@ body{
 }
 
 /* ------------button-------------*/
-
 .button {
   background-color: white; /* Green */
   border: none;
@@ -106,38 +108,82 @@ body{
   margin: 4px 2px;
   cursor: pointer;
 }
-
-
-
-
-
 /* ------------button-------------*/
 
+/*deneme*/
+li{
+  display: inline;
+}
+/*deneme*/
 
+/*yukari_cik butonu*/
+
+.yukari_cik{
+  display: none;/*none gözükmemesini sağlar.(çünkü sayfanın en üstünde gözükmesini istemiyoruz)*/
+  height: 80px;
+  width: 80px;
+  border-radius: 5%;/*köşeleri yumuşatır*/
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  position: fixed;/*butonu sabitler*/
+  bottom: 15px;
+  right: 15px;
+}
+.yukari_cik:hover{/*üstüne gelindiğinde çalışır(el işareti  olur.)*/
+  cursor: pointer;
+}
+.goster{
+  display: block; /*sayfayı aşağı kaydırdığımızda butonu javascript ile göstereceğiz */
+}
+
+
+/*yukari_cik butonu*/
 
 </style>
 </head>
 
 <body>
 
-
-<!-- buton tasarımı -->
-<center><a href="#bitki"><button class="button">Bitki Çayları</button></a></center>
+  <a class="yukari_cik"><img src="icons/arrow.png"></a> <!--yukarı çık butonu(arrow) -->
 
 
+<!-- buton tasarımı(sayfa içi link) -->
+<center>
+<ul>
+  <li>  
+  <a href="#espresso"><img src="icons/espresso-kahveler.jpg" style="width: 80px; height: 80px; border-radius: 5%;"></a>
+  </li>
+  <li>
+    <a href="#sicak-icecekler"><img src="icons/sicak-icecekler.jpg" style="width: 80px; height: 80px; border-radius: 5%;"></a>
+  </li>
+  <li>
+    <a href="#soguk-icecekler"><img src="icons/soguk-icecekler.jpg" style="width: 80px; height: 80px; border-radius: 5%;"></a>
+  </li> 
+  <li>
+    <a href="#bitki"><img src="icons/bitki-caylari.jpg" style="width: 80px; height: 80px; border-radius: 5%;"></a>
+  </li> 
+  <li>
+    <a href="#soguk-kahveler"><img src="icons/soguk-kahveler.jpg" style="width: 80px; height:  70px; border-radius: 5%;"></a>
+  </li>  
+  </ul>
+    </center>
 
 
-<!-- espresso bazlı kahveler-->
+    <!--buton tasarımı -->
+    
+    <!-- espresso bazlı kahveler-->
 
   <div class="container">
     <div class="menu">
-      <h2 class="menu-group-heading">
+      <h2 class="menu-group-heading" id="espresso">
 		Espresso Bazlı Kahveler
       </h2>
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/espresso-kahveler/single-espresso.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/espresso-kahveler/single-espresso.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Single Espresso</span>
@@ -152,7 +198,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/espresso-kahveler/double-espresso.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/espresso-kahveler/double-espresso.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Double Espresso</span>
@@ -183,7 +229,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/espresso-kahveler/latte.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/espresso-kahveler/latte.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Coffee Latte</span>
@@ -245,7 +291,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/espresso-kahveler/mocha.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/espresso-kahveler/mocha.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Coffee Mocha</span>
@@ -329,12 +375,12 @@ body{
 
         <!-- Sıcak içecekler -->
 
-      <h2 class="menu-group-heading" id=""> <!-- id'yi sayfa içi link için oluşturduk. -->
+      <h2 class="menu-group-heading" id="sicak-icecekler"> <!-- id'yi sayfa içi link için oluşturduk. -->
         Sıcak içecekler
           </h2>
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/turk-kahvesi.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/turk-kahvesi.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Türk Kahvesi</span>
@@ -349,7 +395,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/aromali-turk-kahvesi.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/aromali-turk-kahvesi.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Aromalı Türk Kahvesi</span>
@@ -364,7 +410,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/menengic-kahvesi.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/menengic-kahvesi.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Menengiç Kahvesi</span>
@@ -379,7 +425,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/damla-sakizli-turk-kahvesi - Kopya.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/damla-sakizli-turk-kahvesi - Kopya.jpg" alt="">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Damla Sakızlı Türk Kahvesi</span>
@@ -394,7 +440,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/dibek-kahvesi.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/dibek-kahvesi.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Dibek Kahvesi</span>
@@ -409,7 +455,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/salep.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/salep.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Salep</span>
@@ -424,7 +470,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/aromali-salep.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/aromali-salep.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Aromalı Salep</span>
@@ -439,7 +485,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sicak-cikolata.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sicak-cikolata.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Sıcak Çikolata</span>
@@ -454,7 +500,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/beyaz-sicak-cikolata.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/beyaz-sicak-cikolata.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Beyaz Sıcak Çikolata</span>
@@ -469,7 +515,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/nescafe.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/nescafe.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Nescafe</span>
@@ -484,7 +530,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sutlu-nescafe.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sutlu-nescafe.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Sütlü Nescafe</span>
@@ -499,7 +545,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sut.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/sut.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Süt</span>
@@ -514,7 +560,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/balli-sut.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/balli-sut.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Ballı Süt</span>
@@ -529,7 +575,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/cay.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/cay.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Çay</span>
@@ -544,7 +590,7 @@ body{
 
       <div class="menu-group">
         <div class="menu-item">
-          <img class="menu-item-image" src="images/icecek/sicak-icecekler/fincan-cay.jpg" alt="Bruschetta">
+          <img class="menu-item-image" src="images/icecek/sicak-icecekler/fincan-cay.jpg" alt=" ">
           <div class="menu-item-text">
             <h3 class="menu-item-heading">
               <span class="menu-item-name">Fincan Çay</span>
@@ -562,7 +608,7 @@ body{
 <!-- Soğuk İçecekler -->
 
 
-<h2 class="menu-group-heading">
+<h2 class="menu-group-heading" id="soguk-icecekler">
   Soğuk İçecekler
     </h2>
     <div class="menu-group">
@@ -947,12 +993,12 @@ body{
 
 <!-- Soğuk kahveler start -->
 
-<h2 class="menu-group-heading">
+<h2 class="menu-group-heading" id="soguk-kahveler">
   Soğuk kahveler
     </h2>
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-americano.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-americano.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Americano</span>
@@ -968,7 +1014,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-latte.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-latte.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Latte</span>
@@ -983,7 +1029,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-mocha.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-mocha.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Mocha</span>
@@ -998,7 +1044,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-white-mocha.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-white-mocha.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice White Mocha</span>
@@ -1013,7 +1059,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-caramel-latte.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-caramel-latte.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Caramel Latte</span>
@@ -1028,7 +1074,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-caramel-macchiato.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/ice-caramel-macchiato.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Ice Caramel Macchiato</span>
@@ -1043,7 +1089,7 @@ body{
 
     <div class="menu-group">
       <div class="menu-item">
-        <img class="menu-item-image" src="images/icecek/soguk-kahveler/milkshake.jpg" alt="Bruschetta">
+        <img class="menu-item-image" src="images/icecek/soguk-kahveler/milkshake.jpg" alt=" ">
         <div class="menu-item-text">
           <h3 class="menu-item-heading">
             <span class="menu-item-name">Milkshake</span>
@@ -1069,6 +1115,7 @@ body{
 
     </div>
   </div>
+  <script src="custom.js"></script> <!--javascript kütüphanemizi içe aktardık. -->
 </body>
 
 </html>
